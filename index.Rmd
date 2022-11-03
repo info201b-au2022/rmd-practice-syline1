@@ -1,0 +1,21 @@
+---
+title: "X10"
+output: html_document
+date: "2022-11-02"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r, echo=TRUE}
+source("X10.R")
+```
+# X10 R Markdown Practice
+
+## Covid Analysis
+There were **`r get_total_cases`** total cases and **`r get_total_deaths`** total deaths.
+
+```{r, echo=TRUE}
+print(cases_plot)
+```
